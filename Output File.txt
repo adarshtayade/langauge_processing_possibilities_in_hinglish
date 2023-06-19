@@ -1,0 +1,171 @@
+(S
+  (S (NP (N She)) (VP (V said)))
+  (Conj ke)
+  (S (NP (N wo)) (VP (Neg nahi) (V aayegi))))
+
+
+
+(S
+  (NP (N Na) (N pine))
+  (VP
+    (V hai)
+    (NP (NP (N na) (N apple)) (Conj phirbhi) (NP (N pineapple)))))
+
+
+
+(S (NP (Det Jab) (N we)) (VP (V met)))
+
+
+
+(S
+  (NP (AdjP (PP (N Pyaar) (P ke)) (Adj side)) (N effects))
+  (VP (V hote) (V hai)))
+
+(S
+  (NP (NP (N Pyaar)) (PP (P ke) (NP (Adj side) (N effects))))
+  (VP (V hote) (V hai)))
+
+(S
+  (NP (N Pyaar) (PP (P ke) (NP (Adj side) (N effects))))
+  (VP (V hote) (V hai)))
+
+(S
+  (NP (NP (N Pyaar)) (Conj ke) (NP (Adj side) (N effects)))
+  (VP (V hote) (V hai)))
+
+
+
+(S
+  (NP (NP (N Car)) (PP (P ka) (NP (N engine))))
+  (VP (V damaged) (V hai)))
+
+(S (NP (N Car) (PP (P ka) (NP (N engine)))) (VP (V damaged) (V hai)))
+
+(S (NP (Det Tera) (N saboon)) (VP (Adj slow) (V hai)))
+
+
+
+(S
+  (NP (N Location))
+  (VP
+    (VP (V pohonch) (V jao))
+    (Conj tab)
+    (VP (NP (N call)) (V karna))))
+
+(S
+  (S (NP (N Location)) (VP (V pohonch) (V jao)))
+  (Conj tab)
+  (S (NP (N call)) (VP (V karna))))
+
+
+
+(S (NP (Det Apna) (N time)) (VP (V aayega)))
+
+
+
+(S
+  (NP (NP (Det Saari) (N duniya)) (P se))
+  (VP (VP (V kaho) (NP (N copy))) (P that)))
+
+(S
+  (NP (NP (Det Saari) (N duniya)) (P se))
+  (VP (VP (V kaho) (V copy)) (P that)))
+
+(S
+  (NP (NP (Det Saari) (N duniya)) (P se))
+  (VP (V kaho) (NP (NP (N copy)) (P that))))
+
+
+
+(S (NP (Det Mujhe) (N bathroom)) (VP (V jaana) (V hai)))
+
+
+
+(S (NP (AdjP (Adj Kit) (Adj Kat)) (N break)) (VP (V banta) (V hai)))
+
+
+
+(S
+  (NP (Det Apna) (N life))
+  (VP
+    (NP (NP (Adj full) (N saanp-seedi)) (PP (P ka) (NP (N khel))))
+    (V hai)))
+
+
+
+(S
+  (NP (NP (NP (N Tu)) (PP (P kisi) (NP (N rail)))) (P si))
+  (VP (V guzarti) (V hai)))
+
+(S
+  (NP (NP (N Tu) (PP (P kisi) (NP (N rail)))) (P si))
+  (VP (V guzarti) (V hai)))
+
+(S
+  (NP (NP (N Tu)) (PP (P kisi) (NP (NP (N rail)) (P si))))
+  (VP (V guzarti) (V hai)))
+
+(S
+  (NP (NP (NP (N Tu)) (P kisi)) (PP (N rail) (P si)))
+  (VP (V guzarti) (V hai)))
+
+(S
+  (NP (N Tu) (PP (P kisi) (NP (NP (N rail)) (P si))))
+  (VP (V guzarti) (V hai)))
+
+
+
+(S
+  (NP
+    (NP (Adj Zarase) (N ghao))
+    (PP (P ko) (NP (Det tumne) (N cancer))))
+  (VP (V bana) (V diya) (V hai)))
+
+
+
+(S
+  (NP (NP (Det Ye) (N World-cup)) (P to))
+  (VP (PP (N India) (P hi)) (V jeetega)))
+
+(S
+  (NP (Det Ye) (N World-cup))
+  (VP (PP (P to) (NP (NP (N India)) (P hi))) (V jeetega)))
+
+(S
+  (NP (NP (Det Ye) (N World-cup)) (P to))
+  (VP (NP (NP (N India)) (P hi)) (V jeetega)))
+
+(S
+  (NP
+    (NP (NP (Det Ye) (N World-cup)) (PP (P to) (NP (N India))))
+    (P hi))
+  (VP (V jeetega)))
+
+(S
+  (NP (NP (Det Ye) (N World-cup) (PP (P to) (NP (N India)))) (P hi))
+  (VP (V jeetega)))
+
+(S
+  (NP
+    (NP (Det Ye) (N World-cup))
+    (PP (P to) (NP (NP (N India)) (P hi))))
+  (VP (V jeetega)))
+
+(S
+  (NP (NP (NP (Det Ye) (N World-cup)) (P to)) (PP (N India) (P hi)))
+  (VP (V jeetega)))
+
+(S
+  (NP (Det Ye) (N World-cup) (PP (P to) (NP (NP (N India)) (P hi))))
+  (VP (V jeetega)))
+
+
+
+(S (NP (Det Unka) (N operation)) (VP (V karwana) (V hai)))
+
+
+
+(S
+  (NP (N Hum) (N ek) (N prank))
+  (VP (V shoot) (V kar) (V rahe) (V the)))
+>>> 

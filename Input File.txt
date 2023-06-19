@@ -1,0 +1,254 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[9]:
+
+
+import nltk, re, pprint, sys, os, numpy as np
+from nltk import CFG, ChartParser
+
+
+# In[10]:
+
+
+grammar1 = nltk.CFG.fromstring("""
+  S -> NP VP | S Conj S
+  NP -> Det N | Det N PP | N | N PP | AdjP N | Adj N |NP P | N N | AdjP N | NP Conj NP | NP PP | N N N 
+  VP -> V NP | V NP PP | Neg V | V | NP V | PP V | AdjP V | Adj V | V V | VP P | VP Conj VP | V V V | V V V V
+  PP -> P NP | N P 
+  AdjP -> PP Adj | Det Adj | Adj Adj
+  V -> "said" | "aayegi" | "hai" |  "met" | "hote" | "hota" | "damaged" | "aayega" | "kaho" | "copy" | "banta" | "hai," | "bana" | "diya" | "pohonch" | "jao" | "karna" | "jaana" | "hai" | "karwana" | "guzarti" | "jeetega" | "shoot" | "kar" | "rahe" | "the"
+  N -> "She" | "wo" | "we" | "Pyaar" | "effects" | "Car" | "engine" | "saboon" | "time" | "duniya" | "copy" | "break" | "Exams" | "baap" | "ek" | "ghao" | "cancer" | "Na" | "pine" | "apple" | "pineapple" | "na" | "Location" | "call" | "bathroom" | "life" | "saanp-seedi" | "khel" | "operation" | "Tu" | "rail" | "World-cup" | "India" | "Hum" | "ek" | "prank"
+  Det -> "Jab" | "Tera" | "Apna" | "Saari" | "tumne" | "Mujhe" | "Unka" | "Ye"
+  P -> "ke" | "ka" | "ki" | "se" |  "that" | "toh" | "hi" | "ko" | "kisi" | "si" | "to"
+  Neg -> "nahi"
+  Conj -> "phirbhi" | "ke" | "tab" | "par"
+  Adj -> "paas" | "side" | "slow" | "Kit" | "Kat" | "full" | "bahut" | "mostly" | "Zarase"
+  """)
+
+
+# In[11]:
+
+
+sent1 = "She said ke wo nahi aayegi"
+sent2 = "Na pine hai na apple phirbhi pineapple"
+sent3 = "Jab we met"
+sent4 = "Pyaar ke side effects hote hai"
+sent5 = "Car ka engine damaged hai"
+sent6 = "Tera saboon slow hai"
+sent7 = "Location pohonch jao tab call karna"
+sent8 = "Apna time aayega"
+sent9 = "Saari duniya se kaho copy that"
+sent10 = "Mujhe bathroom jaana hai"
+sent11 = "Kit Kat break banta hai"
+sent12 = "Apna life full saanp-seedi ka khel hai"
+sent13 = "Tu kisi rail si guzarti hai"
+sent14 = "Zarase ghao ko  tumne cancer bana diya hai"
+sent15 = "Ye World-cup to India hi jeetega"
+sent16 = "Unka operation karwana hai"
+sent17 = "Hum ek prank shoot kar rahe the"
+
+
+# In[12]:
+
+
+tokens1 = sent1.split()
+tokens2 = sent2.split()
+tokens3 = sent3.split()
+tokens4 = sent4.split()
+tokens5 = sent5.split()
+tokens6 = sent6.split()
+tokens7 = sent7.split()
+tokens8 = sent8.split()
+tokens9 = sent9.split()
+tokens10 = sent10.split()
+tokens11 = sent11.split()
+tokens12 = sent12.split()
+tokens13 = sent13.split()
+tokens14 = sent14.split()
+tokens15 = sent15.split()
+tokens16 = sent16.split()
+tokens17 = sent17.split()
+
+
+# In[13]:
+
+
+parser = nltk.ChartParser(grammar1)
+
+
+# In[14]:
+
+
+#sent1 = "She said ke wo nahi aayegi"
+trees = []
+for tree in parser.parse(tokens1):
+    print(tree)
+    trees.append(tree)
+
+
+# In[15]:
+
+
+#sent2 = "Na pine hai na apple phirbhi pineapple"
+trees = []
+for tree in parser.parse(tokens2):
+    print(tree)
+    trees.append(tree)
+
+
+# In[16]:
+
+
+#sent3 = "Jab we met"
+trees = []
+for tree in parser.parse(tokens3):
+    print(tree)
+    trees.append(tree)
+
+
+# In[17]:
+
+
+#sent4 = "Pyaar ke side effects hote hai"
+trees = []
+for tree in parser.parse(tokens4):
+    print(tree)
+    trees.append(tree)
+
+
+# In[18]:
+
+
+#sent5 = "Car ka engine damaged hai"
+trees = []
+for tree in parser.parse(tokens5):
+    print(tree)
+    trees.append(tree)
+
+
+# In[19]:
+
+
+#sent6 = "Tera saboon slow hai"
+trees = []
+for tree in parser.parse(tokens6):
+    print(tree)
+    trees.append(tree)
+
+
+# In[20]:
+
+
+#sent7 = "Location pohonch jao tab call karna"
+trees = []
+for tree in parser.parse(tokens7):
+    print(tree)
+    trees.append(tree)
+
+
+# In[22]:
+
+
+#sent8 = "Apna time aayega"
+trees = []
+for tree in parser.parse(tokens8):
+    print(tree)
+    trees.append(tree)
+
+
+# In[23]:
+
+
+#sent9 = "Saari duniya se kaho copy that"
+trees = []
+for tree in parser.parse(tokens9):
+    print(tree)
+    trees.append(tree)
+
+
+# In[24]:
+
+
+#sent10 = "Mujhe bathroom jaana hai"
+trees = []
+for tree in parser.parse(tokens10):
+    print(tree)
+    trees.append(tree)
+
+
+# In[25]:
+
+
+#sent11 = "Kit Kat break banta hai"
+trees = []
+for tree in parser.parse(tokens11):
+    print(tree)
+    trees.append(tree)
+
+
+# In[26]:
+
+
+#sent12 = "Apna life full saanp-seedi ka khel hai"
+trees = []
+for tree in parser.parse(tokens12):
+    print(tree)
+    trees.append(tree)
+
+
+# In[27]:
+
+
+#sent13 = "Tu kisi rail si guzarti hai"
+trees = []
+for tree in parser.parse(tokens13):
+    print(tree)
+    trees.append(tree)
+
+
+# In[28]:
+
+
+#sent14 = "Zarase ghao ko  tumne cancer bana diya hai"
+trees = []
+for tree in parser.parse(tokens14):
+    print(tree)
+    trees.append(tree)
+
+
+# In[29]:
+
+
+#sent15 = "Ye World-cup to India hi jeetega"
+trees = []
+for tree in parser.parse(tokens15):
+    print(tree)
+    trees.append(tree)
+
+
+# In[30]:
+
+
+#sent16 = "Unka operation karwana hai"
+trees = []
+for tree in parser.parse(tokens16):
+    print(tree)
+    trees.append(tree)
+
+
+# In[32]:
+
+
+#sent17 = "Hum ek prank shoot kar rahe the"
+trees = []
+for tree in parser.parse(tokens17):
+    print(tree)
+    trees.append(tree)
+
+
+# In[ ]:
+
+
+
+
