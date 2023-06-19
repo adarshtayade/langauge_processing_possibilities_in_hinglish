@@ -51,7 +51,7 @@ In our analysis, considering the corpus limitations, we have considered only tho
 * Proper nouns are also changed to suit the phonetic convention of the receiving languages and thus the spelling in such derivation can also change.
 
 ### Code:
-[Click here for code](/Language/Language.ipynb)
+[Click here for code](Language.ipynb)
 
 
 ### Implications and hypothesis:
@@ -73,10 +73,10 @@ While the above tagging scheme is working fine enough and seems to be correct, t
 ### Parsing for few hand picked Hinglish sentences
 
 #### Input:
-[Click here for input code](/Language/Input%20File.txt)
+[Click here for input code](Input File.txt)
 
 #### Output:
-[Click here for output](/Language/Output%20File.txt)
+[Click here for output](Output File.txt)
 
 
 ### Observations:
