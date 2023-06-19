@@ -73,10 +73,10 @@ While the above tagging scheme is working fine enough and seems to be correct, t
 ### Parsing for few hand picked Hinglish sentences
 
 #### Input:
-[Click here for input code](Input File.txt)
+[Click here for input code](Input_File.txt)
 
 #### Output:
-[Click here for output](Output File.txt)
+[Click here for output](Output_File.txt)
 
 
 ### Observations:
